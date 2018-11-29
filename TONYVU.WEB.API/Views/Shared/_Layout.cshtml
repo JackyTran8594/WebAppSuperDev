@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+@RenderBody()
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Purchasing</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    @*<link href="img/favicon.ico" rel="icon">*@
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+    @*<link href="~/app/scripts/scriptForWeb/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">*@
+    @*<link href="~/Content/bootstrap.min.css" rel="stylesheet" />*@
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/app/scripts/scriptForWeb/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="~/app/scripts/scriptForWeb/tonyvu.css" rel="stylesheet" />
+</head>
+
+<body class="">
+    <div ng-show="isLogIn == true">
+        <header id="header">
+            <div class="container">
+                <div id="logo" class="pull-left">
+                    <a href="index.html"><img src="../../../UploadFiles/logo VD.jpg" alt="" title=""></img></a>
+                </div>
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li><a ui-sref="home">Trang chủ</a></li>
+                        <li><a ui-sref="home">Giới thiệu</a></li>
+                        <li class="menu-has-children">
+                            <a href="#product">Sản phẩm&nbsp;<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul>
+                                <li><a ui-sref="elevator">Thang máy</a></li>
+                                <li><a ui-sref="airCondition">Điều hòa</a></li>
+                            </ul>
+                        </li>
+                        <li><a ui-sref="service">Dịch vụ</a></li>
+                        <li><a ui-sref="projectClient">Dự án</a></li>
+                        <li class="menu-has-children">
+                            <a href="">Admin&nbsp;<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                            <ul>
+                                <li><a ui-sref="menu">Menu</a></li>
+                                <li><a ui-sref="products">Sản phẩm</a></li>
+                                <li><a ui-sref="users">Người dùng</a></li>
+                                <li><a ui-sref="roles">Quyền</a></li>
+                                <li><a ui-sref="groupRoles">Nhóm quyền</a></li>
+                                <li><a ui-sref="projects">Dự án</a></li>
+                                <li><a ui-sref="news">Tin tức</a></li>
+                                <li><a ui-sref="typeProducts">Loại sản phẩm</a></li>
+                                <li><a ui-sref="feedbacks">Phản hồi</a></li>
+                                <li class="menu-has-children">
+                                    <a href="#">Drop Down 2</a>
+                                    <ul>
+                                        <li><a href="#">Deep Drop Down 1</a></li>
+                                        <li><a href="#">Deep Drop Down 2</a></li>
+                                        <li><a href="#">Deep Drop Down 3</a></li>
+                                        <li><a href="#">Deep Drop Down 4</a></li>
+                                        <li><a href="#">Deep Drop Down 5</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li><a ui-sref="contact">Liên hệ</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav social-nav pull-right hidden-sm-down">
+                    <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+                </nav>
+            </div>
+        </header><!-- #header -->
+    </div>
+
+
+    <div ui-view>
+
+    </div>
+
+
+
+
+    <script src="~/app/scripts/scriptForWeb/lib/tether/js/tether.min.js"></script>
+    <!-- ./wrapper -->
+    <script src="~/app/scripts/jQuery-2.2.0.min.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script type="text/javascript">
+        var CKEDITOR_BASEPATH = "@Url.Content("~/app/ckeditor/")";
+    </script>
+    <script src="~/app/ckeditor/ckeditor.js"></script>
+
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-animate.js"></script>
+    <script src="~/Scripts/angular-sanitize.js"></script>
+    <script src="~/Scripts/angular-touch.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/Scripts/angular-ui-router.js"></script>
+    <script src="~/Scripts/angular-local-storage.min.js"></script>
+    <script src="~/Scripts/angular-ui/ui-bootstrap.js"></script>
+    <script src="~/Scripts/angular-ui/ui-bootstrap-tpls.js"></script>
+    <script src="~/app/scripts/angular-resource.js"></script>
+    <script src="~/app/services/services.js"></script>
+    <script src="~/app/module/sysModule.js"></script>
+    <script src="~/app/module/clientModule.js"></script>
+    <script src="~/app/module/authenticationModule.js"></script>
+    <script src="~/app/app.js"></script>
+    <!--Admin-->
+    <script src="~/app/directives/myDirectives.js"></script>
+    <script src="~/app/controller/homeController.js"></script>
+    <script src="~/app/controller/projectController.js"></script>
+    <script src="~/app/controller/productController.js"></script>
+    <script src="~/app/controller/authentication/authenticationController.js"></script>
+    <script src="~/app/controller/feedbackController.js"></script>
+    <script src="~/app/controller/newController.js"></script>
+    <script src="~/app/controller/menuController.js"></script>
+    <script src="~/app/controller/projectController.js"></script>
+    <script src="~/app/controller/typeproductController.js"></script>
+    <script src="~/app/controller/userController.js"></script>
+    <script src="~/app/controller/roleController.js"></script>
+    <!--end-->
+    <!--Client-->
+    <script src="~/app/controller/client/airConditionController.js"></script>
+    <script src="~/app/controller/client/contactController.js"></script>
+    <script src="~/app/controller/client/elevatorController.js"></script>
+    <script src="~/app/controller/client/newClientController.js"></script>
+    <script src="~/app/controller/client/projectClientController.js"></script>
+    <script src="~/app/controller/client/serviceController.js"></script>
+    <!--end-->
+</body>
+
+</html>

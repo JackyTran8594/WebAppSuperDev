@@ -1,0 +1,49 @@
+﻿
+
+<div class="loginApp">
+    <p class="login-box-msg">Đăng nhập</p>
+    <form name="_formLogin">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="UserName" ng-model="userData.userName" />
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password" ng-model="userData.password">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">
+                <button type="submit" ng-click="login(userData)" class="btn btn-primary btn-flat">Sign In</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<style>
+    .loginApp {
+        width: 50%;
+        margin-top: 10% ;
+        margin-left: 25% ;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+
+    .loginApp form, .loginApp p {
+        position: relative;
+    }
+
+    .loginApp p {
+        padding-top: 5%;
+        text-align: center;
+    }
+
+     .loginApp button {
+         position: relative;
+         margin: 0 0 20% 180%;
+     }
+
+     .loginApp input {
+         width: 90%;
+         margin: 0 0 0 5%;
+     }
+
+</style>

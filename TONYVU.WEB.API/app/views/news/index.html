@@ -1,0 +1,59 @@
+﻿
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+                <h4 class="modal-title">Tin tức</h4>
+                <br/>
+                <span class="input-group-btn">
+                    <button type="button" ng-click="add()" id="btnOpenModal" class="btn btn-default">Thêm tin tức</button>
+                </span>
+            </div>
+            <div class="box-body table-responsive">
+             
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tiêu đề</th>
+                            <th>Tác giả</th>
+                            <th>Hành động</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in data">
+                            <td>{{$index + 1}}</td>
+                            <td>{{item.title}}</td>
+                            <td>{{item.author}}</td>
+                            <td>
+                                <button type="button" class="btn btn-info" ng-click="detail(item)">{{config.label.btnDetail}}</button>
+                                <button type="button" class="btn btn-primary" ng-click="edit(item)">{{config.label.btnEdit}}</button>
+                                <button type="button" class="btn btn-warning" ng-click="delete(item)">{{config.label.btnDelete}}</button>
+                            </td>
+
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="panel-footer">
+                <div style="text-align: right;">                 
+                    <ul uib-pagination
+                        ng-change="pageChanged()"
+                        items-per-page="paged.itemPerPage"
+                        boundary-links="true"
+                        max-size="paged.pageSize"
+                        total-items="paged.totalItems"
+                        ng-model="paged.currentPage"
+                        class="no-margin-vertical  pagination-sm"
+                        previous-text="&lsaquo;"
+                        next-text="&rsaquo;"
+                        first-text="&laquo;"
+                        last-text="&raquo;"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

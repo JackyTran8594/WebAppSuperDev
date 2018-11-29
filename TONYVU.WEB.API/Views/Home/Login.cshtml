@@ -1,0 +1,58 @@
+﻿
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 2 | Log in</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="~/app/content/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="~/app/content/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="~/app/content/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/app/content/AdminLTE.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="~/app/content/blue.css">
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+<body class="hold-transition login-page">
+
+    <!-- /.login-box -->
+    <!-- jQuery 3 -->
+    <!--<script src="../../bower_components/jquery/dist/jquery.min.js"></script>-->
+    <script src="~/app/scripts/jQuery-2.2.0.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <!--<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
+    <script src="~/app/scripts/bootstrap.min.js"></script>
+    <!-- iCheck -->
+    <script src="~/app/scripts/admin/icheck.min.js"></script>
+    <!--angular-->
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/app/scripts/angular-ui/ui-bootstrap.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/Scripts/angular-ui-router.js"></script>
+    <script src="~/Scripts/angular-local-storage.js"></script>
+    <script src="~/app/scripts/angular-resource.js"></script>
+    <script src="~/app/services/services.js"></script>
+    <script src="~/app/module/authenticationModule.js"></script>
+    <script src="~/app/controller/authentication/authenticationController.js"></script>
+
+    <script>
+        $(function () {
+            $('input').iCheck({
+                checkboxClass: 'icheckbox_square-blue',
+                radioClass: 'iradio_square-blue',
+                increaseArea: '20%' // optional
+            });
+        });
+    </script>
+</body>
+</html>
