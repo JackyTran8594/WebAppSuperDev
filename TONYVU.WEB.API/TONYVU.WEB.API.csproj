@@ -24,6 +24,7 @@
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -3234,6 +3235,7 @@
     <Content Include="app\views\groupRole\detail.html" />
     <Content Include="app\views\groupRole\edit.html" />
     <Content Include="app\views\groupRole\index.html" />
+    <Content Include="app\views\othersview\dashboard.html" />
     <Content Include="app\views\project\add.html" />
     <Content Include="app\views\project\detail.html" />
     <Content Include="app\views\project\edit.html" />

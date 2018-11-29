@@ -19,7 +19,7 @@ function ($windowProvider, $stateProvider, $urlRouterProvider, $httpProvider) {
 
     $stateProvider.state('home', {
         url: '/home',
-        templateUrl: rootUrl + '/app/views/othersview/home.html',
+        templateUrl: rootUrl + '/app/views/othersview/dashboard.html',
         controller: 'homeController',
         resolve: {
             isLogIn: function () {
