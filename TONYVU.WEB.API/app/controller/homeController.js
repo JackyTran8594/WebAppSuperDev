@@ -24,5 +24,7 @@ var homeController = sysModule.controller('homeController', ['$scope', '$rootSco
         $scope.config = configService;
         $rootScope.isLogIn = isLogIn;
 
+        
+
     }]);
 

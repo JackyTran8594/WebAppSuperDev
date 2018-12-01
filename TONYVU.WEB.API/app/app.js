@@ -1,6 +1,6 @@
 //main module
 var app = angular.module('myApp', ['ui.bootstrap', 'ui.bootstrap.tpls', 'ui.bootstrap.modal', 'ui.router', 'ngAnimate', 'ngResource'
-    , 'ngServices', 'sysModule', 'LocalStorageModule', 'authenticationModule', 'clientModule'
+    , 'ngServices', 'sysModule', 'LocalStorageModule', 'authenticationModule', 'clientModule', 'webcam'
 ]);
 
 //main config
